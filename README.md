@@ -1,2 +1,2 @@
-# Miscellanea
- sundries
+# Разное
+О всяком
