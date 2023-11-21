@@ -2,6 +2,10 @@
 
 a { text-decoration: none; }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* Page */
 
 body {
@@ -34,6 +38,7 @@ header {
 .logo > h2 {
     color: #009528;
     font-size: 30px;
+    font-weight: 400;
 }
 
 nav {
@@ -58,5 +63,55 @@ nav > ul > a:hover {
     text-decoration-color: #009528;
 }
 
+a[href='login.html'] {
+    color: #009528; 
+}
+
 /* Footer */
 
+footer {
+    display: flex;
+    height: 75px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: #E0E0E0;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* Path */
+
+.path {
+    font-size: 20px;
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.path a {
+    color: rgba(28, 37, 123, 1);
+}
+
+.path a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #009528;
+}
+
+.path img,
+.path svg {
+    width: 15px;
+    display: inline;
+}
+
+@media screen and (max-width: 500px) {
+    footer > p { font-size: 10px;}
+}
