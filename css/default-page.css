@@ -1,7 +1,7 @@
 h1 {
     color: #1C257B;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .content {
@@ -19,6 +19,4 @@ h1 {
     font-weight: 400;
 }
 
-.content p a {
-    text-decoration: underline;
-}
+.content p a { text-decoration: underline; }

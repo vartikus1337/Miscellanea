@@ -21,7 +21,7 @@ form .login-inputs {
     gap: 30px;
 }
 
-.login-inputs input {
+input {
     min-width: 30vw;
     border-radius: 5px;
     border: 2px solid #B6BDD7;

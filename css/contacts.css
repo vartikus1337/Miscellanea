@@ -1,0 +1,31 @@
+.content .row {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.content .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.column h2 {
+    color: #07599B;
+    font-weight: 400;
+}
+
+#right { width: 50%; }
+
+#right1 form {
+    display: flex;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#right2 {
+    width: 70%;
+}
+
