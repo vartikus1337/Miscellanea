@@ -173,7 +173,6 @@ cython_debug/
 .DS_Store
 .parcel-cache
 tailwind.config.js
-index.html
 yarn.lock
 yarn-error.log
 types/generated/*.d.ts
@@ -246,3 +245,6 @@ dist/**/*
 
 # ignore yarn.lock
 yarn.lock
+
+
+public

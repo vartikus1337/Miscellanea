@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Ubuntu:wght@400;700&display=swap');
+
+a { text-decoration: none; }
+
+/* Page */
+
+body {
+    font-family: Ubuntu;
+    display: flex;
+    max-width: 1920px;
+    padding: 0px 1vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Header */
+
+header {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo > h2 {
+    color: #009528;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav > ul > a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #009528;
+}
+
+/* Footer */
+
