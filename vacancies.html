@@ -30,10 +30,10 @@
         </a>
         <nav>
             <ul>
-                <a href="">Контакты</a>
-                <a href="">Услуги</a>
-                <a href="">Вакансии</a>
-                <a href="">Отзывы</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="services.html">Услуги</a>
+                <a href="vacancies.html">Вакансии</a>
+                <a href="reviews.php">Отзывы</a>
             </ul>
             <a href="login.html">Войти</a>
         </nav>
