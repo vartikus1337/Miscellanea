@@ -1,0 +1,30 @@
+main {
+    gap: 20px;
+    width: 100%;
+}
+
+main h3 { 
+    margin-top: 30px;
+    font-weight: 400; 
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input { max-width: 30vw; }
+
+textarea { max-width: 40vw; }
+
+#line {
+    height: 15px;
+    width: 100%;
+}
+
+#comment {
+    display: flex;
+    gap: 30px;
+}
