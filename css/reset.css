@@ -1,9 +1,7 @@
 /* Box sizing rules */
 *,
 *::before,
-*::after {
-  box-sizing: border-box;
-}
+*::after { box-sizing: border-box; }
 
 /* Prevent font size inflation */
 html {
@@ -14,15 +12,11 @@ html {
 
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-  margin: 0;
-}
+figure, blockquote, dl, dd { margin: 0; }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
+ol[role='list'] { list-style: none; }
 
 /* Set core body defaults */
 body {
@@ -38,9 +32,7 @@ button, input, label {
 
 /* Balance text wrapping on headings */
 h1, h2,
-h3, h4 {
-  text-wrap: balance;
-}
+h3, h4 { text-wrap: balance; }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
@@ -57,16 +49,10 @@ picture {
 
 /* Inherit fonts for inputs and buttons */
 input, button,
-textarea, select {
-  font: inherit;
-}
+textarea, select { font: inherit; }
 
 /* Make sure textarea without a rows attribute are not tiny */
-textarea:not([rows]) {
-  min-height: 10em;
-}
+textarea:not([rows]) { min-height: 10em; }
 
 /* Anything that has been anchored to should have extra scroll margin */
-:target {
-  scroll-margin-block: 5ex;
-}
+:target { scroll-margin-block: 5ex; }
