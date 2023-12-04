@@ -1,25 +1,8 @@
-<template class="app">
-  <form class="form" @submit.prevent>
-    <h3>Создание постов</h3>
-    <input
-      class="input"
-      @input="title = $event.target.value"
-      v-bind:value="title"
-      type="text"
-      placeholder="Название"
-    />
-    <input
-      class="input"
-      v-bind:value="body"
-      @input="body = $event.target.value"
-      type="text"
-      placeholder="Описание"
-    />
-    <button class="btn" @click="createPost">Создать</button>
-  </form>
-  <div class="post" v-for="post in posts" :key="post.id">
-    <h3>{{ post.title }}</h3>
-    <p>{{ post.body }}</p>
+<template>
+  <div class="app">
+    <post-form @create="createPost" />
+    <!-- <post-list on-bind:posts="posts" тож самое -->
+    <post-list :posts="posts" />
   </div>
 </template>
 
