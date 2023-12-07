@@ -17,18 +17,18 @@ class Line:
             else:
                 self.points[1] = (x, y)
 
-    def wait_until_complete(self, root):
+    def wait_until_complete(self):
         if np.all(self.points[:, 0] != -1) and np.all(self.points[:, 1] != -1):
             root.unbind("<Button-1>")
             canvas.create_line(*self.points.flatten())
         else:
-            root.after(10, self.wait_until_complete, root)
+            root.after(10, self.wait_until_complete)
 
 
 def create_line():
     line = Line()
     root.bind("<Button-1>", line.choose_point)
-    root.after(10, line.wait_until_complete, root)
+    root.after(10, line.wait_until_complete)
     lines.append(line)
     print(lines)
 
