@@ -20,7 +20,9 @@
 
 }
 
+
 body {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,10 +51,6 @@ header ul {
     gap: 40px;
 }
 
-header ul li {
-    list-style: none;
-}
-
 .selected {
     color: var(--main-color);
 }
@@ -66,6 +64,12 @@ main {
 main aside.left {
     position: relative;
     width: 60%;
+}
+
+aside.left img:not(.eff) {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 aside.left .eff {
@@ -217,6 +221,10 @@ main aside.right {
     width: 50%;
 }
 
+.cardJacob__right img {
+    width: 100%;
+}
+
 .cardJacob__left p {
     font-size: 22px;
     line-height: 33px;
@@ -226,15 +234,15 @@ main aside.right {
 .contact {
     width: 100%;
     display: flex;
-    background-color: var(--bg-card);         
+    background-color: var(--bg-card);
     padding: 60px;
-    gap: 70px; 
+    gap: 70px;
     border-radius: 32px;
     margin: 200px 0;
     position: relative;
 }
 
-.contact > div {
+.contact>div {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -269,9 +277,9 @@ main aside.right {
 
 .comments {
     display: grid;
-    grid-template-areas: 
-    "comment1 comment2 comment3"
-    "comment4 comment5 comment6";
+    grid-template-areas:
+        "comment1 comment2 comment3"
+        "comment4 comment5 comment6";
     justify-items: stretch;
     gap: 16px;
     margin-bottom: 200px;
@@ -293,25 +301,6 @@ main aside.right {
     font-weight: 400;
 }
 
-.comment1 {
-    grid-area: "column1";
-}
-.comment2 {
-    grid-area: "column2";
-}
-.comment3 {
-    grid-area: "column3";
-}
-.comment4 {
-    grid-area: "column4";
-}
-.comment5 {
-    grid-area: "column5";
-}
-.comment6 {
-    grid-area: "column6";
-}
-
 .footer {
     font-size: 18px;
     line-height: 27px;
@@ -325,4 +314,71 @@ main aside.right {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .normaltext {
+        padding: 20px 0;
+    }
+
+    .comment__title {
+        font-size: 24px;
+    }
+
+    .infoepisode h3 {
+        padding: 20px 0;
+    }
+
+    .cardJacob {
+        margin-top: 100px;
+    }
+
+    .contact {
+        margin: 100px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .comments {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .main__text,
+    .main__text span {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .main__text img {
+        width: calc(100%);
+    }
+
+    .episode {
+        flex-direction: column;
+    }
+
+    .episode img {
+        object-fit: cover;
+        height: 300px;
+        background-size: cover;
+    }
+
+    .cardJacob__right img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .bigtext {
+        font-size: 40px;
+    }
+    .contact {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact > div {
+        width: 100%;
+    }
 }
