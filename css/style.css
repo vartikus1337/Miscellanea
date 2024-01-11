@@ -316,6 +316,12 @@ main aside.right {
     gap: 10px;
 }
 
+@media screen and (max-width: 1300px) {
+    .comment {
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .normaltext {
         padding: 20px 0;
@@ -380,5 +386,58 @@ main aside.right {
 
     .contact > div {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0 25px;
+    }
+    header ul {
+        gap: 20px;
+    }
+
+    main {
+        margin-right: 0;
+        gap: 30px;
+    }
+
+    .main__text,
+    .main__text span {
+        font-size: 30px;
+    }
+
+    .cardJacob {
+        flex-direction: column;
+    }
+
+    .cardJacob > aside {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    .bigtext {
+        line-height: 35px
+    }
+}
+
+@media screen and (max-width: 469px) {
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardJacob {
+        margin-top: 10px;
+    }
+    .footer {
+        grid-template-columns: 1fr;
     }
 }
