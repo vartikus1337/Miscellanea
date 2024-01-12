@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --clr-bgc-main: #FFFFFF;
+    --clr-bgc-second: #CFFD3C;
+    --clr-bgc-header-second: #FB4B4D;
+    --clr-bgc-fire: #CEFD3B;
+    --clr-bgc-footer: #CDFD3B;
+    --clr-main: #000000;
+    --clr-second: #8B83F6;
+    --clr-text-btn: #FFFFFF;
+    --clr-header-link: #222222;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--clr-main);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
