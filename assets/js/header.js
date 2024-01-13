@@ -8,6 +8,4 @@ if (menu && menuBtn) {
         menuBtn.classList.toggle('active');
         body.classList.toggle('lock');
     });
-
-    
 }

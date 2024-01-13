@@ -22,3 +22,109 @@ body {
     margin: 0 auto;
 }
 
+/* Page start Grid */
+
+.page__start {
+    margin-top: 110px;
+    display: grid;
+    margin: 110px 1px 0 1px;
+    outline: 1px solid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 150px) 90px repeat(2, 200px);
+    grid-template-areas: 
+        "ujjo-big title"
+        "ujjo-big title"
+        "ticker ujjo-hand"
+        "ujjo-cactus ujjo-hand"
+        "ujjo-cactus ujjo-hand";
+}
+
+.start__ujjo-big {
+    grid-area: ujjo-big;
+    padding: 20px;
+}
+
+.start__ticker {
+    grid-area: ticker;
+    padding: 25px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.start__ujjo-cactus {
+    padding: 20px;
+    grid-area: ujjo-cactus;
+}
+
+.start__ujjo-cactus img {
+    width: 100%;
+    height: 100%;
+}
+
+.start__title {
+    grid-area: title;
+}
+
+.start__ujjo-hand {
+    grid-area: ujjo-hand;
+}
+
+/* Ujjo container */
+
+.ujjo__container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.ujjo__container .ujjo {
+    width: 560px;
+    height: 260px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+.ujjo__container .ujjo-lang {
+    width: 480px;
+    position: absolute;
+}
+
+/* Ticker */
+
+.ticker {
+    display: flex;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.ticker__wrapper {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.item__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    animation: ticker 5s linear infinite;
+}
+
+.ticker__item {
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
