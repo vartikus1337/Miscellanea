@@ -63,16 +63,18 @@ body {
 }
 
 .start__title {
-    border-left: 1px solid;
-    margin-bottom: -1px;
-    border-bottom: 1px solid;
-    font-size: 45px;
     grid-area: title;
-    padding: 40px 40px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.title {
+    font-size: 50px;
     letter-spacing: 0.5px;
 }
 
@@ -224,6 +226,7 @@ body {
 }
 
 .card__body > h2 {
+    white-space: nowrap;
     font-size: 32px;
 }
 
@@ -235,3 +238,108 @@ body {
     width: 100%;
     border-radius: 10px;
 }
+
+/* Article Ticker */
+
+.article-ticker {
+    border: 1px solid;
+    border-top: none;
+    border-bottom: none;
+}
+
+.article-ticker .start__ticker {
+    border-top: none;
+    border-bottom: none;
+}
+
+/* Big card */
+
+.bigcard {
+    border: 1px solid;
+    padding: 20px;
+}
+
+.bigcard img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Page Secondary */
+
+.page__secondary {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 100px) repeat(3, 130px);
+    border: 1px solid;
+    border-top: none;
+    display: grid;
+    grid-template-areas: 
+    "secondary__title secondary__info"
+    "secondary__title secondary__info"
+    "secondary__img secondary__info"
+    "secondary__img secondary__info"
+    "secondary__img secondary__info";
+}
+
+.secondary__title {
+    grid-area: secondary__title;
+    text-transform: uppercase;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.secondary__img {
+    grid-area: secondary__img;
+    border-right: 1px solid;
+}
+
+.secondary__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.secondary__info {
+    grid-area: secondary__info;
+    position: relative;
+}
+
+.info__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__wrapper > img {
+    position: absolute;
+}
+
+.info__body {
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info__body > h3 {
+    font-size: 1vw;
+    line-height: 18px;
+}
+
+.info__back {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
