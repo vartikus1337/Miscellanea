@@ -584,4 +584,19 @@ body {
     .footer {
         font-size: 10px;
     }
+
+    .card__fire > img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .info__body {
+        width: 220px;
+    }
+    
+    .info__body > h3 {
+        line-height: 13px;
+    }
 }
