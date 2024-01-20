@@ -534,6 +534,10 @@ body {
         left: 42%;
     }
 
+    .card__body > img {
+        border-radius: 20px;
+    }
+
     .page__secondary {
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
