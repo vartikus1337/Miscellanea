@@ -74,7 +74,7 @@ body {
 }
 
 .title {
-    font-size: 50px;
+    font-size: 45px;
     letter-spacing: 0.5px;
 }
 
@@ -320,6 +320,44 @@ body {
     position: absolute;
 }
 
+.info__wrapper .star-1 {
+    top: 7%;
+}
+
+.info__wrapper .star-2 {
+    left: 7%;
+}
+
+.info__wrapper .star-3 {
+    right: 7%;
+}
+
+.info__wrapper .star-4 {
+    bottom: 7%;
+}
+
+.info__wrapper .jar-1 {
+    transform: scale(-1, 1);
+    top: 3%;
+    left: 10%;
+}
+
+.info__wrapper .jar-2 {
+    top: 3%;
+    right: 10%;
+}
+
+.info__wrapper .rabbit-1 {
+    transform: scale(-1, 1);
+    bottom: 3%;
+    right: 10%;
+}
+
+.info__wrapper .rabbit-2 {
+    bottom: 3%;
+    left: 10%;
+}
+
 .info__body {
     text-align: center;
     width: 300px;
@@ -343,3 +381,203 @@ body {
     height: 100%;
 }
 
+/* Card Fire */
+
+.card__fire {
+    border: 1px solid;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.fire__body {
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__fire .ujjo__container {
+    height: 50%;
+    width: 50%;
+}
+
+.card__fire > img {
+    width: 100%;
+    height: 100%;
+}
+
+.fire__wrapper {
+    z-index: -1;
+    overflow: hidden;
+    height: 130%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.fire__wrapper img {
+    transform: translate(-15%, -5%);
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+}
+
+.oracle__wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oracle-1 {
+    top: 10%;
+    left: 5%;
+}
+
+.oracle-2 {
+    bottom: 10%;
+    left: 5%;
+}
+
+.oracle-3 {
+    top: 10%;
+    right: 5%;
+}
+
+.oracle-4 {
+    bottom: 10%;
+    right: 5%;
+}
+
+.oracle__wrapper img:nth-child(2) {
+    position: absolute;
+}
+
+/* Footer */
+
+.footer {
+    text-transform: uppercase;
+    background-color: var(--clr-bgc-footer);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    border-top: none;
+}
+
+/* Adaptive */
+
+@media (max-width: 1200px) {
+    .card__body > h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .page__start {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        padding: 5px;
+    }
+
+    .page__start {
+        grid-template-rows:
+            repeat(2, 1fr) 50px repeat(2, 1fr);
+        grid-template-areas: 
+        "ujjo-big ujjo-big"
+        "title title"
+        "ticker ticker"
+        "ujjo-hand ujjo-hand"
+        "ujjo-hand ujjo-hand"
+        "ujjo-cactus ujjo-cactus"
+        "ujjo-cactus ujjo-cactus";
+    }
+
+    .start__ujjo-big {
+        outline: 1px solid;
+    }
+
+    .title {
+        border-left: none;
+    }
+
+    .start__ticker {
+        border-top: none;
+    }
+
+    .start__ujjo-hand {
+        border-left: none;
+        border-bottom: 1px solid;
+    }
+
+    .article__title {
+        font-size: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards > img {
+        left: 42%;
+    }
+
+    .page__secondary {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "secondary__title secondary__title"
+        "secondary__img secondary__img"
+        "secondary__info secondary__info"
+        "secondary__info secondary__info";
+    }
+
+    .secondary__title {
+        border-right: none;
+    }
+
+    .info__body {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .info__body > h3 {
+        font-size: 10px;
+    }
+
+    [class|=rabbit],
+    [class|=jar] {
+        width: 70px;
+    }
+
+    .oracle__wrapper img:nth-child(1) {
+        width: 40px;
+    }
+
+    .oracle__wrapper img:nth-child(2) {
+        width: 25px;
+    }
+
+    .card__fire {
+        height: 300px;
+    }
+
+    .footer__fire {
+        height: 100%;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
